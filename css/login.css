@@ -1,0 +1,59 @@
+/* Updated Login Form Styles */
+.login-container {
+  padding: 20px;
+  margin: 30px auto;
+  background: linear-gradient(45deg, #007BFF, #00BFFF); /* Change the background gradient */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Modify the box shadow */
+  border-radius: 8px; /* Adjust border radius */
+  max-width: 350px; /* Change the maximum width */
+  text-align: center; /* Center the content */
+}
+
+.login-container h3 {
+  font-size: 18px; /* Increase the font size */
+  font-weight: bold;
+  font-family: Arial, sans-serif; /* Change the font family */
+  margin-bottom: 15px; /* Increase margin for spacing */
+  color: #007BFF; /* Change the text color */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Align form items vertically */
+}
+
+input,
+select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #007BFF; /* Change the border color */
+  border-radius: 5px; /* Adjust border radius */
+  outline: none;
+  background-color: #f0f0f0; /* Change the background color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Modify the box shadow */
+  transition: border-color 0.3s; /* Add a transition for hover effect */
+
+  &:hover {
+    border-color: #00BFFF; /* Change border color on hover */
+  }
+}
+
+#btnEnter,
+.btnReg {
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #007BFF; /* Change the button background color */
+  color: white;
+  text-transform: uppercase; /* Uppercase the text */
+  font-weight: bold;
+  transition: background-color 0.3s; /* Add a background color transition */
+
+  &:hover {
+    background-color: #00BFFF; /* Change button color on hover */
+  }
+}
+
+/* Additional styles can be added as needed */

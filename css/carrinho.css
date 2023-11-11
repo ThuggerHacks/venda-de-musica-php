@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte2: 'Roboto Mono', monospace;
+    --fonte3: 'Sriracha', cursive;
+  }
+
+.carrinho table tr td{
+font-family: var(--fonte2);
+font-size: 18px;
+}
+
+.carrinho table {
+    width: 90%;
+    padding: 15px;
+    background-color: rgb(170, 170, 170);
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 5px 0px;
+    border-radius: 8px;
+    margin-top: 5px;
+    text-align: justify;
+    line-height: 20px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+table{
+    border: solid 1px black;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 5px 0px;
+}
+table th{
+    border-bottom: solid 2px black;
+    border-collapse: collapse;
+}
+
+
+#btnAdd{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(72, 73, 73);
+    float: left;
+    border: none;
+    outline: none;
+    border-radius: 20px 0px 0px 20px;
+}
+
+#btnDiminuir{
+    width: 30px;
+    background-color: rgb(72, 73, 73);
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 0px 20px 20px 0px;   
+}
+.botoes{
+    display: flex;
+    width: 95px;
+    border: 1px solid black;
+    border-radius: 20px 20px 20px 20px;  
+}
+.qty{
+    width: 35px;
+    text-align: center;
+}
+.qty span{
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.total{
+    font-weight: bolder;
+}
+#btClean{
+    width: 100px;
+    height: 35px;
+    background-color: red;
+    margin-top: 10px;
+}
+#btClean:hover{
+    opacity: 0.7;
+}
+#btLoja{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(36, 110, 36);
+}
+
+.btPedido{
+    width: 100px;
+    height: 35px;
+    background-color: rgb(36, 110, 36);
+    margin-top: 10px;
+}
+.btPedido:hover{
+    opacity: 0.7;
+}

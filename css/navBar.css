@@ -1,0 +1,309 @@
+.card-header>img{
+  width:100% !important;
+  max-height: 350px !important;
+  object-fit: cover !important;
+}
+
+nav {
+    display: flex;
+    padding: 20px;
+    background: linear-gradient(45deg,#23232e,#373766,#3636b3);
+    border-bottom: #ebebebeb;
+    background-size: 500% 100%;
+    background-attachment: fixed;
+    animation-name: degrade;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    text-transform: capitalize !important;
+  }
+  @keyframes degrade {
+    0%{ background-position-x:0%;}
+    100%{background-position-x:100%;}
+  }
+.logo{
+  margin-left: 50px;
+  margin-top: 0px;
+}
+  nav a {
+    margin-left: 150px;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgb(219, 217, 217);
+    text-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+      rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+      rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  margin: 10px;
+  transition: color 500ms; 
+  }
+  
+  nav a i span {
+    color: #d81b60;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .lista-nav {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-left: 250px; 
+  }
+  
+  .lista-nav li{
+    list-style: none;
+  }
+  
+  nav ul li a:hover {
+    color: #d81b60;
+  }
+ .lista-nav li a img {
+    width: 30px;
+    height: 30px;
+    filter: invert();
+    margin-top: -4px;
+  }
+  .lista-nav li a img:hover {
+    filter:blur();
+  }
+  /* RESPONSIVIDADE */
+  .menuCell {
+    display: none;
+    cursor: pointer;
+    margin-left: 700px;
+    margin-top: -6px;
+    vertical-align: middle;
+  }
+  
+  .menuCell div {
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width:999px) {
+    body{
+      overflow-x: hidden;
+    }
+    .lista-nav{
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 25vw;
+      height: 70vh;
+      background: linear-gradient(-45deg,#23232e,#373766,#3636b3);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+  
+    .lista-nav li{
+      margin-left: 0;
+      opacity: 0;
+    }
+    .menuCell{
+      display: block;
+    }}
+
+    .lista-nav.active{
+      transform: translateX(0);
+    }
+
+  @keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+  }
+  
+  .menuCell.active .line1{
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  .menuCell.active .line2{
+    opacity: 0;
+  }
+  .menuCell.active .line3{
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  
+
+  /* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0; /* Change the background color */
+}
+
+/* Card and Section Styles */
+.card {
+  width: 25%;
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Change the box shadow */
+  border-radius: 8px;
+  margin: 5px;
+  background-color: #fff; /* Change the background color */
+}
+
+.card-body {
+  margin-top: 5px;
+  text-align: justify;
+  line-height: 20px;
+  font-family: 'Arial', sans-serif; /* Change the font */
+}
+
+.card-header:hover {
+  cursor: pointer;
+}
+
+button,
+.btn-del,
+.btn-ven {
+  padding: 5px;
+  width: 70px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: #007BFF; /* Change button color */
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-del {
+  background: red;
+  margin-left: 5px;
+}
+
+button:hover,
+.btn-ven:hover,
+.btn-del:hover,
+.removeF:hover {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.btn-accept a,
+.btn-excluir a {
+  text-decoration: none;
+  color: #007BFF; /* Change link color */
+}
+
+.btn-accept,
+.btn-excluir {
+  background: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+button img {
+  width: 15px;
+  height: 15px;
+}
+
+.btn-accept:hover {
+  border: 1px solid green;
+  opacity: 0.7;
+}
+
+.btn-excluir:hover {
+  border: 1px solid red; /* Change border color */
+  opacity: 0.7;
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 20px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007BFF; /* Change link color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+    margin: 10px 0;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+}
+
+
+h3{
+  color:#111 !important
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #ddd;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Optional: Add rounded corners */
+table {
+  border-radius: 5px;
+}
+
+#tblCadastro label{
+  color:#fff !important
+}
